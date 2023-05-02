@@ -1,0 +1,6 @@
+package com.example.bmut
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
