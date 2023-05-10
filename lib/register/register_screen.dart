@@ -9,18 +9,16 @@ class RegisterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: LayoutBuilder(
-        builder: (context, p1) {
+        builder: (context, constraint) {
           return Center(
-            child: Form(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: ,
-                child: TextField()),
-            ],
-          ),
-        ));
+              child: Form(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(width: constraint.maxWidth * 0.9, child: TextField()),
+              ],
+            ),
+          ));
         },
       ),
     );
