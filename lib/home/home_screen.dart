@@ -1,4 +1,4 @@
-import 'package:bmut/constants/turkish_strings.dart';
+import 'package:bmut/constants/turkish_texts.dart';
 import 'package:bmut/register/register_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,11 +16,11 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                    onPressed: () {}, child: const Text(TurkishStrings.login)),
+                    onPressed: () {}, child: const Text(TurkishTexts.login)),
                 SizedBox(
                   height: height * .01,
                 ),
-                const Text(TurkishStrings.or),
+                const Text(TurkishTexts.or),
                 SizedBox(
                   height: height * .01,
                 ),
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushNamed(context, "/register");
                     },
-                    child: const Text(TurkishStrings.register))
+                    child: const Text(TurkishTexts.register))
               ],
             ),
           ),

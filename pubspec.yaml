@@ -1,14 +1,17 @@
 name: bmut
 description: A new Flutter project.
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: ">=2.19.6 <3.0.0"
 
 dependencies:
+  awesome_dialog: ^3.0.2
+  crypto: ^3.0.3
   flutter:
     sdk: flutter
+  http: ^0.13.6
 
 dev_dependencies:
   flutter_test:
