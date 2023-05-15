@@ -3,7 +3,6 @@ import 'dart:io';
 
 import 'package:bmut/register/model/response_model.dart';
 import 'package:crypto/crypto.dart';
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class RegisterViewModel {

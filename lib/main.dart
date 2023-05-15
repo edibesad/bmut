@@ -1,5 +1,4 @@
 import 'package:bmut/home/home_screen.dart';
-import 'package:bmut/register/register_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'constants/color_schemes.dart';

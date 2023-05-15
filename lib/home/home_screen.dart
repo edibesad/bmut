@@ -1,5 +1,4 @@
 import 'package:bmut/constants/turkish_texts.dart';
-import 'package:bmut/register/register_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
