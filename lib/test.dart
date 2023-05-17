@@ -1,6 +1,5 @@
+import 'package:bmut/service/device_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class TestScreen extends StatelessWidget {
   const TestScreen({super.key});
@@ -9,6 +8,15 @@ class TestScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("test")),
+      body: Center(
+        child: OutlinedButton(
+          child: Text("Çıkış"),
+          onPressed: () async {
+            print(await DeviceStorage.removeUserFromStorage());
+            Navigator.of(context).pushReplacementNamed("/startup");
+          },
+        ),
+      ),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants/turkish_texts.dart';
+import '../../constants/turkish_texts.dart';
 
 class StartupScreen extends StatelessWidget {
   const StartupScreen({super.key});

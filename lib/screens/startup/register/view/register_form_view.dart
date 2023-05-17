@@ -2,7 +2,7 @@
 
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:bmut/constants/const_strings.dart';
-import 'package:bmut/startup/register/view_model/register_view_model.dart';
+import 'package:bmut/screens/startup/register/view_model/register_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:bmut/constants/decorations.dart';
 import 'package:bmut/constants/turkish_texts.dart';

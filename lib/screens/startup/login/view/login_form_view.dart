@@ -1,14 +1,12 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:bmut/service/service.dart';
-import 'package:bmut/startup/login/view_model/login_view_model.dart';
-import 'package:bmut/startup/model/response_model.dart';
+import 'package:bmut/screens/startup/login/view_model/login_view_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants/const_strings.dart';
-import '../../../constants/decorations.dart';
-import '../../../constants/turkish_texts.dart';
+import '../../../../constants/const_strings.dart';
+import '../../../../constants/decorations.dart';
+import '../../../../constants/turkish_texts.dart';
 
 class LoginFormView extends StatefulWidget {
   const LoginFormView({super.key});

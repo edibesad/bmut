@@ -1,7 +1,6 @@
-import 'package:bmut/home/home_screen.dart';
-import 'package:bmut/startup/login/login_screen.dart';
-import 'package:bmut/startup/register/register_screen.dart';
-import 'package:bmut/startup/startup_screen.dart';
+import 'package:bmut/screens/startup/login/login_screen.dart';
+import 'package:bmut/screens/startup/register/register_screen.dart';
+import 'package:bmut/screens/startup/startup_screen.dart';
 import 'package:bmut/test.dart';
 import 'package:flutter/material.dart';
 
