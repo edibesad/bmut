@@ -8,30 +8,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        double height = constraints.maxHeight;
         return Scaffold(
-          body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                    onPressed: () {}, child: const Text(TurkishTexts.login)),
-                SizedBox(
-                  height: height * .01,
-                ),
-                const Text(TurkishTexts.or),
-                SizedBox(
-                  height: height * .01,
-                ),
-                ElevatedButton(
+            body: Center(
+                child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, "/register");
+                      Navigator.pushNamed(context, "/startup");
                     },
-                    child: const Text(TurkishTexts.register))
-              ],
-            ),
-          ),
-        );
+                    child: const Text("Startup"))));
       },
     );
   }

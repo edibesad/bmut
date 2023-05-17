@@ -2,12 +2,12 @@
 
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:bmut/constants/const_strings.dart';
-import 'package:bmut/startup/view_model/register_view_model.dart';
+import 'package:bmut/startup/register/view_model/register_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:bmut/constants/decorations.dart';
 import 'package:bmut/constants/turkish_texts.dart';
 
-import '../model/response_model.dart';
+import '../../model/response_model.dart';
 
 class RegisterFormView extends StatefulWidget {
   const RegisterFormView({super.key});
@@ -106,6 +106,7 @@ class _RegisterFormViewState extends State<RegisterFormView> {
                 .show();
             return;
           }
+
           ResponseModel response = await RegisterViewModel.register(
               email: email!, password: password!);
           if (response.type == "success") {
