@@ -14,4 +14,6 @@ class TurkishTexts {
   static const error = "Hata!";
   static const success = "Başarılı!";
   static const registerSuccsessDesc = "Kayıt başarılı bir şekilde yapıldı!";
+  static const checkboxWarn =
+      "Kullanım şartlarını okuyup kabul etmeniz gerekmektedir.";
 }

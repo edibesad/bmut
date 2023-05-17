@@ -2,7 +2,7 @@
 
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:bmut/constants/const_strings.dart';
-import 'package:bmut/register/view_model/register_view_model.dart';
+import 'package:bmut/startup/view_model/register_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:bmut/constants/decorations.dart';
 import 'package:bmut/constants/turkish_texts.dart';
@@ -50,6 +50,9 @@ class _RegisterFormViewState extends State<RegisterFormView> {
             SizedBox(
                 width: constraints.maxWidth * 0.9,
                 child: TextFormField(
+                  obscureText: true,
+                  enableSuggestions: false,
+                  autocorrect: false,
                   validator: (value) {
                     if (value!.isEmpty || value == "") {
                       return TurkishTexts.thisFiledCantEmpty;
@@ -67,6 +70,9 @@ class _RegisterFormViewState extends State<RegisterFormView> {
             SizedBox(
                 width: constraints.maxWidth * 0.9,
                 child: TextFormField(
+                  obscureText: true,
+                  enableSuggestions: false,
+                  autocorrect: false,
                   validator: (value) {
                     if (value!.isEmpty || value == "") {
                       return TurkishTexts.thisFiledCantEmpty;
@@ -92,7 +98,14 @@ class _RegisterFormViewState extends State<RegisterFormView> {
     return ElevatedButton(
         onPressed: () async {
           if (!_formKey.currentState!.validate()) return;
-          if (!checkbox) return;
+          if (!checkbox) {
+            AwesomeDialog(
+                    context: context,
+                    dialogType: DialogType.error,
+                    title: TurkishTexts.checkboxWarn)
+                .show();
+            return;
+          }
           ResponseModel response = await RegisterViewModel.register(
               email: email!, password: password!);
           if (response.type == "success") {
@@ -109,7 +122,7 @@ class _RegisterFormViewState extends State<RegisterFormView> {
               dialogType: DialogType.error,
               title: TurkishTexts.error,
               desc: response.message,
-            ).show().then((value) => Navigator.pop(context));
+            ).show();
           }
         },
         child: const Text(TurkishTexts.register));
